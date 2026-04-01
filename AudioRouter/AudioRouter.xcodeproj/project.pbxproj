@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		398DA9FA5C242115D4F7ED5A /* AudioRouterDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31BA2C7428D32407F3D0D65 /* AudioRouterDriver.cpp */; };
+		3C1C7008847BD988E67B06D7 /* AudioDeviceServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06716DB60AD12FB978A05420 /* AudioDeviceServiceTests.swift */; };
+		434CED3567F9A90B42FEF9E2 /* AudioRouterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7193D9688730C4F94A71E93F /* AudioRouterApp.swift */; };
+		6B96AFB3A864AA534215FDC6 /* AudioDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F46477D411F1BCF5E3A63F0 /* AudioDevice.swift */; };
+		75880E9AEC4636AAAD6D8C4C /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B242AE989F9DB70F400020D7 /* Profile.swift */; };
+		83B2B100C053F2D107D2A5FA /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE09051044EA138FEE57E54 /* MenuBarView.swift */; };
+		84883F61DD9E38E473653EA6 /* AppListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132DC97159FE94F30DAEDEA0 /* AppListView.swift */; };
+		87214383F78F5E64D9D55B61 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190AF24801509B883FDFE536 /* ProfileViewModel.swift */; };
+		8D7A943D2E77858B32FF8E3E /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9D2D82FA9CBC202F9F036 /* ProfileService.swift */; };
+		98EC53D5CCBA4559666B7065 /* AppMonitorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F1918AFFEB359EB00D09DB /* AppMonitorService.swift */; };
+		99FF62C55E4735F904B92834 /* HDMIMonitorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B47D55D1E7CA90F6D67D046 /* HDMIMonitorService.swift */; };
+		AE941AF69D28126492D03A7E /* ProfileServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9805773D56CA58A039A1ED5 /* ProfileServiceTests.swift */; };
+		B57652A97DA9F8BA5EF58DF4 /* DeviceMonitorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E507B684EB63A8CA6E142B /* DeviceMonitorViewModel.swift */; };
+		C02D7F7F8AF21345F0A9EEA0 /* DevicePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48133E092405B8643DC6A2AB /* DevicePickerView.swift */; };
+		C850E93FE3FAD234B1812E3B /* AudioRoutingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C32D088F890C8A3CDC49C71 /* AudioRoutingViewModel.swift */; };
+		CB2C31549C80207FAE259F40 /* AudioDeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A027F6E4EEC40663ADF5AD /* AudioDeviceService.swift */; };
+		CCDEA3607B4B77167BC96A64 /* AutoSwitchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9159A2C400A9E9015B5A85 /* AutoSwitchService.swift */; };
+		EE511FFC980F5BD83D95DFF2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EFA4DB4BF44780E1CF1C90 /* ProfileView.swift */; };
+		F021A5348926E76CEFECA8D7 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF677F844478F47260BB942 /* OnboardingView.swift */; };
+		F198C6D83AE61400808E3485 /* AppEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907E2A411A4BEE25D1D0EEBC /* AppEntry.swift */; };
+		F4B2A1B3D20A0F4C54132F92 /* HDMIMonitorServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D006D7DD54CCB2288ADCAFEA /* HDMIMonitorServiceTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95E11BF2C1536D3040D0BFF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFB282FF4B53414AA86FEA4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D59FA4602912FACBB14DB83;
+			remoteInfo = AudioRouter;
+		};
+		B8E73D0223A8BBEC040358C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFB282FF4B53414AA86FEA4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 010C1EA0BEDDCB6EC15858BA;
+			remoteInfo = AudioRouterDriver;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06716DB60AD12FB978A05420 /* AudioDeviceServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioDeviceServiceTests.swift; sourceTree = "<group>"; };
+		132DC97159FE94F30DAEDEA0 /* AppListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListView.swift; sourceTree = "<group>"; };
+		190AF24801509B883FDFE536 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		191A0E0AE93288CE88534785 /* AudioRouterDriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioRouterDriver.h; sourceTree = "<group>"; };
+		2A244426D73D5B4E66B9E9F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		31A027F6E4EEC40663ADF5AD /* AudioDeviceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioDeviceService.swift; sourceTree = "<group>"; };
+		3E9159A2C400A9E9015B5A85 /* AutoSwitchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSwitchService.swift; sourceTree = "<group>"; };
+		48133E092405B8643DC6A2AB /* DevicePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicePickerView.swift; sourceTree = "<group>"; };
+		55EFA4DB4BF44780E1CF1C90 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		629547EA2547ABEDFDA92118 /* AudioRouterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioRouterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B47D55D1E7CA90F6D67D046 /* HDMIMonitorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDMIMonitorService.swift; sourceTree = "<group>"; };
+		6C32D088F890C8A3CDC49C71 /* AudioRoutingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRoutingViewModel.swift; sourceTree = "<group>"; };
+		7193D9688730C4F94A71E93F /* AudioRouterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRouterApp.swift; sourceTree = "<group>"; };
+		7F46477D411F1BCF5E3A63F0 /* AudioDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioDevice.swift; sourceTree = "<group>"; };
+		8D47B5ED2A71260360E2D97C /* AudioRouter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AudioRouter.entitlements; sourceTree = "<group>"; };
+		907E2A411A4BEE25D1D0EEBC /* AppEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntry.swift; sourceTree = "<group>"; };
+		91F1918AFFEB359EB00D09DB /* AppMonitorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMonitorService.swift; sourceTree = "<group>"; };
+		924C1C333C8F99804F6B2BFD /* AudioRouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioRouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C633A1047DD98F550503A78 /* AudioRouterDriver.driver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioRouterDriver.driver; sourceTree = BUILT_PRODUCTS_DIR; };
+		B242AE989F9DB70F400020D7 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		BCF677F844478F47260BB942 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		C31BA2C7428D32407F3D0D65 /* AudioRouterDriver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AudioRouterDriver.cpp; sourceTree = "<group>"; };
+		CBF9D2D82FA9CBC202F9F036 /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
+		CFE09051044EA138FEE57E54 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		D006D7DD54CCB2288ADCAFEA /* HDMIMonitorServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDMIMonitorServiceTests.swift; sourceTree = "<group>"; };
+		E9E507B684EB63A8CA6E142B /* DeviceMonitorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceMonitorViewModel.swift; sourceTree = "<group>"; };
+		F9805773D56CA58A039A1ED5 /* ProfileServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileServiceTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		00451680E170EBF6E2B36CAC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				907E2A411A4BEE25D1D0EEBC /* AppEntry.swift */,
+				7F46477D411F1BCF5E3A63F0 /* AudioDevice.swift */,
+				B242AE989F9DB70F400020D7 /* Profile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1EB91697416AC75FC9613FD1 /* AudioRouterDriver */ = {
+			isa = PBXGroup;
+			children = (
+				C31BA2C7428D32407F3D0D65 /* AudioRouterDriver.cpp */,
+				191A0E0AE93288CE88534785 /* AudioRouterDriver.h */,
+			);
+			path = AudioRouterDriver;
+			sourceTree = "<group>";
+		};
+		3928CBD09A02BB9EF8840582 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7193D9688730C4F94A71E93F /* AudioRouterApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		54165453BB825163D4E12144 /* AudioRouterTests */ = {
+			isa = PBXGroup;
+			children = (
+				06716DB60AD12FB978A05420 /* AudioDeviceServiceTests.swift */,
+				D006D7DD54CCB2288ADCAFEA /* HDMIMonitorServiceTests.swift */,
+				F9805773D56CA58A039A1ED5 /* ProfileServiceTests.swift */,
+			);
+			path = AudioRouterTests;
+			sourceTree = "<group>";
+		};
+		89C2DB8F7802E91B4AA6497B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				924C1C333C8F99804F6B2BFD /* AudioRouter.app */,
+				9C633A1047DD98F550503A78 /* AudioRouterDriver.driver */,
+				629547EA2547ABEDFDA92118 /* AudioRouterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96F7C891031B36B3290F82BB = {
+			isa = PBXGroup;
+			children = (
+				F006376E1D21495D5E60FE92 /* AudioRouter */,
+				1EB91697416AC75FC9613FD1 /* AudioRouterDriver */,
+				54165453BB825163D4E12144 /* AudioRouterTests */,
+				89C2DB8F7802E91B4AA6497B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD8B32F1E73CC842865A08A9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6C32D088F890C8A3CDC49C71 /* AudioRoutingViewModel.swift */,
+				E9E507B684EB63A8CA6E142B /* DeviceMonitorViewModel.swift */,
+				190AF24801509B883FDFE536 /* ProfileViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B0FF260DE498633E159A4FA4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				91F1918AFFEB359EB00D09DB /* AppMonitorService.swift */,
+				31A027F6E4EEC40663ADF5AD /* AudioDeviceService.swift */,
+				3E9159A2C400A9E9015B5A85 /* AutoSwitchService.swift */,
+				6B47D55D1E7CA90F6D67D046 /* HDMIMonitorService.swift */,
+				CBF9D2D82FA9CBC202F9F036 /* ProfileService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DAE4160AAD89EC3BB3F77551 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				132DC97159FE94F30DAEDEA0 /* AppListView.swift */,
+				48133E092405B8643DC6A2AB /* DevicePickerView.swift */,
+				CFE09051044EA138FEE57E54 /* MenuBarView.swift */,
+				BCF677F844478F47260BB942 /* OnboardingView.swift */,
+				55EFA4DB4BF44780E1CF1C90 /* ProfileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F006376E1D21495D5E60FE92 /* AudioRouter */ = {
+			isa = PBXGroup;
+			children = (
+				8D47B5ED2A71260360E2D97C /* AudioRouter.entitlements */,
+				2A244426D73D5B4E66B9E9F8 /* Info.plist */,
+				3928CBD09A02BB9EF8840582 /* App */,
+				00451680E170EBF6E2B36CAC /* Models */,
+				B0FF260DE498633E159A4FA4 /* Services */,
+				AD8B32F1E73CC842865A08A9 /* ViewModels */,
+				DAE4160AAD89EC3BB3F77551 /* Views */,
+			);
+			path = AudioRouter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		010C1EA0BEDDCB6EC15858BA /* AudioRouterDriver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A45DA792F97EDA30664ED47 /* Build configuration list for PBXNativeTarget "AudioRouterDriver" */;
+			buildPhases = (
+				70EC1F29C9E27C2906859445 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioRouterDriver;
+			packageProductDependencies = (
+			);
+			productName = AudioRouterDriver;
+			productReference = 9C633A1047DD98F550503A78 /* AudioRouterDriver.driver */;
+			productType = "com.apple.product-type.bundle";
+		};
+		7D59FA4602912FACBB14DB83 /* AudioRouter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FC7911E3AC626503E4839FA /* Build configuration list for PBXNativeTarget "AudioRouter" */;
+			buildPhases = (
+				2A4BB6D85394E3ABB465AC4C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301D804577FF0FD7507158A9 /* PBXTargetDependency */,
+			);
+			name = AudioRouter;
+			packageProductDependencies = (
+			);
+			productName = AudioRouter;
+			productReference = 924C1C333C8F99804F6B2BFD /* AudioRouter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADEDE4774E8231AD1CC7E289 /* AudioRouterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB4F304F632B8E8DCF7735CE /* Build configuration list for PBXNativeTarget "AudioRouterTests" */;
+			buildPhases = (
+				DA9DC8B46C92200A4DDCDA9A /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05C93BB53BC99BE2C0B60448 /* PBXTargetDependency */,
+			);
+			name = AudioRouterTests;
+			packageProductDependencies = (
+			);
+			productName = AudioRouterTests;
+			productReference = 629547EA2547ABEDFDA92118 /* AudioRouterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFB282FF4B53414AA86FEA4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					010C1EA0BEDDCB6EC15858BA = {
+						ProvisioningStyle = Automatic;
+					};
+					7D59FA4602912FACBB14DB83 = {
+						ProvisioningStyle = Automatic;
+					};
+					ADEDE4774E8231AD1CC7E289 = {
+						DevelopmentTeam = 8G4TP23U5Y;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0C8B7CE8C272611FE69E441E /* Build configuration list for PBXProject "AudioRouter" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 96F7C891031B36B3290F82BB;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 89C2DB8F7802E91B4AA6497B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D59FA4602912FACBB14DB83 /* AudioRouter */,
+				010C1EA0BEDDCB6EC15858BA /* AudioRouterDriver */,
+				ADEDE4774E8231AD1CC7E289 /* AudioRouterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A4BB6D85394E3ABB465AC4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F198C6D83AE61400808E3485 /* AppEntry.swift in Sources */,
+				84883F61DD9E38E473653EA6 /* AppListView.swift in Sources */,
+				98EC53D5CCBA4559666B7065 /* AppMonitorService.swift in Sources */,
+				6B96AFB3A864AA534215FDC6 /* AudioDevice.swift in Sources */,
+				CB2C31549C80207FAE259F40 /* AudioDeviceService.swift in Sources */,
+				434CED3567F9A90B42FEF9E2 /* AudioRouterApp.swift in Sources */,
+				C850E93FE3FAD234B1812E3B /* AudioRoutingViewModel.swift in Sources */,
+				CCDEA3607B4B77167BC96A64 /* AutoSwitchService.swift in Sources */,
+				B57652A97DA9F8BA5EF58DF4 /* DeviceMonitorViewModel.swift in Sources */,
+				C02D7F7F8AF21345F0A9EEA0 /* DevicePickerView.swift in Sources */,
+				99FF62C55E4735F904B92834 /* HDMIMonitorService.swift in Sources */,
+				83B2B100C053F2D107D2A5FA /* MenuBarView.swift in Sources */,
+				F021A5348926E76CEFECA8D7 /* OnboardingView.swift in Sources */,
+				75880E9AEC4636AAAD6D8C4C /* Profile.swift in Sources */,
+				8D7A943D2E77858B32FF8E3E /* ProfileService.swift in Sources */,
+				EE511FFC980F5BD83D95DFF2 /* ProfileView.swift in Sources */,
+				87214383F78F5E64D9D55B61 /* ProfileViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70EC1F29C9E27C2906859445 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				398DA9FA5C242115D4F7ED5A /* AudioRouterDriver.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA9DC8B46C92200A4DDCDA9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C1C7008847BD988E67B06D7 /* AudioDeviceServiceTests.swift in Sources */,
+				F4B2A1B3D20A0F4C54132F92 /* HDMIMonitorServiceTests.swift in Sources */,
+				AE941AF69D28126492D03A7E /* ProfileServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05C93BB53BC99BE2C0B60448 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D59FA4602912FACBB14DB83 /* AudioRouter */;
+			targetProxy = 95E11BF2C1536D3040D0BFF6 /* PBXContainerItemProxy */;
+		};
+		301D804577FF0FD7507158A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 010C1EA0BEDDCB6EC15858BA /* AudioRouterDriver */;
+			targetProxy = B8E73D0223A8BBEC040358C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D42292D812A4EECC9A40903 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AudioRouter/AudioRouter.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S6FET362VE;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AudioRouter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.audiorouter.app;
+				PRODUCT_NAME = AudioRouter;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		2611739DDE25D2F3DFFBF357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 8G4TP23U5Y;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		42ECA358CE3EE8CA3B812F21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 8G4TP23U5Y;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		666EC76406465318F59075E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S6FET362VE;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AudioRouterDriver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_STYLE = Bundle;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					CoreAudio,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					AudioToolbox,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.audiorouter.driver;
+				PRODUCT_NAME = AudioRouterDriver;
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = driver;
+			};
+			name = Debug;
+		};
+		6AC0C42C1AC7BC05590FBA8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AudioRouter/AudioRouter.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S6FET362VE;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AudioRouter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.audiorouter.app;
+				PRODUCT_NAME = AudioRouter;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		72ABBF1F182255E2D30F5EA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.audiorouter.tests;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AudioRouter.app/Contents/MacOS/AudioRouter";
+			};
+			name = Release;
+		};
+		8BEB2662B62835C8D46B9263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S6FET362VE;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AudioRouterDriver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_STYLE = Bundle;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					CoreAudio,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					AudioToolbox,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.audiorouter.driver;
+				PRODUCT_NAME = AudioRouterDriver;
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = driver;
+			};
+			name = Release;
+		};
+		F5CEEF0297AB1A627B5789F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.audiorouter.tests;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AudioRouter.app/Contents/MacOS/AudioRouter";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C8B7CE8C272611FE69E441E /* Build configuration list for PBXProject "AudioRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42ECA358CE3EE8CA3B812F21 /* Debug */,
+				2611739DDE25D2F3DFFBF357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2A45DA792F97EDA30664ED47 /* Build configuration list for PBXNativeTarget "AudioRouterDriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				666EC76406465318F59075E1 /* Debug */,
+				8BEB2662B62835C8D46B9263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2FC7911E3AC626503E4839FA /* Build configuration list for PBXNativeTarget "AudioRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AC0C42C1AC7BC05590FBA8F /* Debug */,
+				1D42292D812A4EECC9A40903 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BB4F304F632B8E8DCF7735CE /* Build configuration list for PBXNativeTarget "AudioRouterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5CEEF0297AB1A627B5789F8 /* Debug */,
+				72ABBF1F182255E2D30F5EA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFB282FF4B53414AA86FEA4A /* Project object */;
+}

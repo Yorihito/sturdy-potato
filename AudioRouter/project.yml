@@ -1,0 +1,98 @@
+name: AudioRouter
+options:
+  bundleIdPrefix: com.audiorouter
+  deploymentTarget:
+    macOS: "14.0"
+  xcodeVersion: "16.0"
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
+    ENABLE_HARDENED_RUNTIME: YES
+    CODE_SIGN_STYLE: Automatic
+    DEVELOPMENT_TEAM: 8G4TP23U5Y
+
+targets:
+  AudioRouter:
+    type: application
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: AudioRouter
+        excludes:
+          - "**/*.md"
+    resources:
+      - path: AudioRouter/Resources
+        optional: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.audiorouter.app
+        PRODUCT_NAME: AudioRouter
+        INFOPLIST_FILE: AudioRouter/Info.plist
+        CODE_SIGN_ENTITLEMENTS: AudioRouter/AudioRouter.entitlements
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/../Frameworks"
+        SWIFT_VERSION: "6.0"
+        ENABLE_PREVIEWS: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    entitlements:
+      path: AudioRouter/AudioRouter.entitlements
+      properties:
+        com.apple.security.app-sandbox: false
+        com.apple.security.cs.allow-unsigned-executable-memory: true
+    dependencies:
+      - target: AudioRouterDriver
+        embed: false
+
+  AudioRouterDriver:
+    type: bundle
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: AudioRouterDriver
+        excludes:
+          - "Info.plist"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.audiorouter.driver
+        PRODUCT_NAME: AudioRouterDriver
+        INFOPLIST_FILE: AudioRouterDriver/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        WRAPPER_EXTENSION: driver
+        LIBRARY_STYLE: Bundle
+        GCC_ENABLE_CPP_EXCEPTIONS: YES
+        GCC_ENABLE_CPP_RTTI: YES
+        OTHER_LDFLAGS: "-framework CoreAudio -framework CoreFoundation -framework AudioToolbox"
+
+  AudioRouterTests:
+    type: bundle.unit-test
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: AudioRouterTests
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.audiorouter.tests
+        SWIFT_VERSION: "6.0"
+    dependencies:
+      - target: AudioRouter
+
+schemes:
+  AudioRouter:
+    build:
+      targets:
+        AudioRouter: all
+        AudioRouterDriver: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - AudioRouterTests
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
